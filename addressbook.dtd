@@ -1,0 +1,11 @@
+<!-- DTD for an CPS121 Project 4 addressbook  -->
+
+<!ELEMENT addressbook (person*)>
+<!ELEMENT person (address, phone, email)>
+<!ATTLIST person
+	lastname CDATA #REQUIRED
+	firstname CDATA #REQUIRED
+>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
